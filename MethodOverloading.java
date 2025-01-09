@@ -18,7 +18,7 @@ class Student {
     }
 
     public void printInfo(String name, int age) {
-        System.out.println(name + " " + age);
+        System.out.println(name +  age);
     }
     public void printInfo(){
         System.out.println("No parameter");
@@ -32,7 +32,7 @@ public class MethodOverloading {
         s1.age = 21;
         // s1.printInfo(s1.name, s1.age);
         // s1.printInfo(s1.age);
-        s1.printInfo();
+        s1.printInfo(s1.name,s1.age);
     }
 }
 
