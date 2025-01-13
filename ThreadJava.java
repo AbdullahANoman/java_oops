@@ -2,7 +2,7 @@ class Pokemon implements Runnable{
     String name;
     String attack;
    
-    public Pokemon(String name, String attack){
+    Pokemon(String name, String attack){
         this.name = name;
         this.attack = attack;
     }
@@ -27,8 +27,8 @@ class Pokemon implements Runnable{
     }
 }
 
-class Main {
-    public static void main(String[] args) {
+public  class ThreadJava {
+    public static void main(String args[]) {
 
         Pokemon pika = new Pokemon("Pikachu", "Thunderbolt");
         Pokemon zard = new Pokemon("Charizard", "Flamethrower");
@@ -39,6 +39,5 @@ class Main {
        
         t1.start();
         t2.start();
-
     }
 }
